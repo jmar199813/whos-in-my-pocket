@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -25,23 +29,24 @@ form {
 }
 
 input {
-  flex: 1;
+  flex: 1; /* Allow input to take up remaining space */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  min-width: 0; /* Prevent overflow */
 }
 
 button {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #28a745;
+  background-color: #1a1a1a;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #404140;
 }
 
 ul {
