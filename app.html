@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Tracker</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subscription Tracker</h1>
+        <form id="subscription-form">
+            <input type="text" id="subscription-input" placeholder="Enter subscription name" required>
+            <input type="number" id="subscription-price" placeholder="Enter subscription price" required>
+            <button type="submit">Add Subscription</button>
+        </form>
+        <ul id="subscription-list"></ul>
+        <p id="total">Total: $0.00</p> <!-- Total display -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
